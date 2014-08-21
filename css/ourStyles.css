@@ -21,6 +21,13 @@ body {
     margin: 0;
     padding: 15px 0;
 }
-.content{
-    min-height: 400px!important;
+section.content>div.container {
+    min-height: 350px!important;
+}
+.required{
+    font-size: 17px;
+    color: red;
+}
+ul.navbar-nav>li{
+    height: 60px!important;
 }

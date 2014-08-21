@@ -2,19 +2,19 @@
     <fieldset>
         <legend>Register</legend>
         <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">First Name</label>
+            <label for="firstFName" class="col-lg-2 control-label">First Name<sup class="required">*</sup></label>
             <div class="col-lg-10">
-                <input type="text" name="fName" class="form-control" id="inputEmail" placeholder="First Name">
+                <input type="text" required="" name="fName" class="form-control" id="firstFName" placeholder="First Name">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Last Name</label>
+            <label for="inputLName" class="col-lg-2 control-label">Last Name<sup class="required">*</sup></label>
             <div class="col-lg-10">
-                <input type="text" name="lName" class="form-control" id="inputEmail" placeholder="Last Name">
+                <input type="text" required="" name="lName" class="form-control" id="inputLName" placeholder="Last Name">
             </div>
         </div>
         <div class="form-group">
-            <label class="col-lg-2 control-label">Gender</label>
+            <label class="col-lg-2 control-label">Gender<sup class="required">*</sup></label>
             <div class="col-lg-10">
                 <div class="radio">
                     <label>
@@ -31,28 +31,34 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Town</label>
+            <label for="inputTown" class="col-lg-2 control-label">Town<sup class="required">*</sup></label>
             <div class="col-lg-10">
-                <input type="text" name="town" class="form-control" id="inputEmail" placeholder="Town">
+                <input type="text" name="town" required="" class="form-control" id="inputTown" placeholder="Town">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">User Name</label>
+            <label for="inputUserName" class="col-lg-2 control-label">User Name<sup class="required">*</sup></label>
             <div class="col-lg-10">
-                <input type="text" name="userName" class="form-control" id="inputEmail" placeholder="User Name">
+                <input type="text" name="userName" required="" class="form-control" id="inputUserName" placeholder="User Name">
             </div>
         </div>
 
         <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <label for="inputEmail" class="col-lg-2 control-label">Email<sup class="required">*</sup></label>
             <div class="col-lg-10">
-                <input type="email" name="emai" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" name="emai" required="" class="form-control" id="inputEmail" placeholder="Email">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Password</label>
+            <label for="inputPass" class="col-lg-2 control-label">Password<sup class="required">*</sup></label>
             <div class="col-lg-10">
-                <input type="password" name="emai" class="form-control" id="inputEmail" placeholder="Password">
+                <input type="password" name="password" required="" class="form-control" id="inputPass" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputConfPass" class="col-lg-2 control-label">Confirm Password<sup class="required">*</sup></label>
+            <div class="col-lg-10">
+                <input type="password" name="confirmPassword" required="" class="form-control" id="inputConfPass" placeholder="Confirm Password">
             </div>
         </div>
         <div class="form-group">
@@ -65,7 +71,7 @@
 
         <div class="form-group">
             <div class="col-lg-10 col-lg-offset-2">
-                <button class="btn btn-default">Cancel</button>
+                <button type="reset" class="btn btn-default">Reset</button>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
