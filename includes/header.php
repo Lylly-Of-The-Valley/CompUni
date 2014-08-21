@@ -30,12 +30,26 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="register.php">Register</a>
-                    </li>
-                    <li>
-                        <a href="login.php">Login</a>
-                    </li>
+                    <?php if (isset($_SESSION['signed_in'])): ?>
+                        <li class="greet-user">
+                            <a class="greet-user user-panel">
+                                <div class="greet-user">
+                                    <?= "Hello " . $_SESSION['user_name'] . " !" ?>
+                                </div>
+                                <div class="logout btn btn-sm btn-info">
+                                    Logout ?
+                                </div>
+                            </a>
+
+                        </li>
+                    <?php else: ?>
+                        <li>
+                            <a href="register.php">Register</a>
+                        </li>
+                        <li>
+                            <a href="login.php">Login</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>

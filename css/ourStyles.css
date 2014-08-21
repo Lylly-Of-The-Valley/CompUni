@@ -28,6 +28,30 @@ section.content>div.container {
     font-size: 17px;
     color: red;
 }
-ul.navbar-nav>li{
-    height: 60px!important;
+
+
+.greet-user{
+    display: inline-block;
+    background-color: #2C3E50 !important;
+    color: #ffffff;
+}
+.user-panel{
+    padding-top: 14px !important;
+    padding-bottom: 13px !important;
+}
+
+.logout{
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+/* media queries */
+@media all and (max-width: 767px) {
+    ul.navbar-nav>li{
+        text-align: center;
+        font-size: 21px;
+    }
 }
