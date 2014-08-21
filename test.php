@@ -1,4 +1,4 @@
 <?php
-require("header.php");
-require("login.php");
-require("footer.php");
+require("includes/header.php");
+require("includes/login.php");
+require("includes/footer.php");
