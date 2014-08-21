@@ -13,7 +13,7 @@
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">CompUni</a>
+                <a class="navbar-brand" href="index.php">CompUni</a>
                 <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -31,10 +31,10 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Register</a>
+                        <a href="register.php">Register</a>
                     </li>
                     <li>
-                        <a href="#">Login</a>
+                        <a href="login.php">Login</a>
                     </li>
                 </ul>
             </div>
