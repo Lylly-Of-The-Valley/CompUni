@@ -1,6 +1,6 @@
-@import "bootstrap-glyphicons.less";
-body{
+body {
     font-family: Open Sans, Arial, Helvetica, sans-serif;
+    background-color: #EAF1F1;
 }
 
 .categories{
@@ -20,4 +20,7 @@ body{
     color: #ffffff;
     margin: 0;
     padding: 15px 0;
+}
+.content{
+    min-height: 400px!important;
 }
