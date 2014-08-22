@@ -31,14 +31,14 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <?php if (isset($_SESSION['signed_in'])): ?>
-                        <li class="greet-user">
-                            <a class="greet-user user-panel">
+                        <li style="padding-top: 6px" class="greet-user">
+                            <a  href="#" class="greet-user user-panel">
                                 <div class="greet-user">
-                                    <?= "Hello " . $_SESSION['user_name'] . " !" ?>
+                                    <?= "Hello " . htmlentities($_SESSION['user_name']) . " !" ?>
                                 </div>
-                                <div class="logout btn btn-sm btn-info">
+                                <a href="logout.php" class="logout btn btn-sm btn-info">
                                     Logout ?
-                                </div>
+                                </a>
                             </a>
 
                         </li>

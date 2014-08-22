@@ -38,13 +38,26 @@ section.content>div.container {
 .user-panel{
     padding-top: 14px !important;
     padding-bottom: 13px !important;
+    display: inline-block !important;
 }
 
 .logout{
-    display: inline-block;
-    color: #ffffff;
+    display: inline-block !important;
+    color: #ffffff !important;
     margin-left: 20px;
     font-weight: bold;
+    padding: 5px 10px !important;
+    border-color: #3498db;
+
+}
+
+.logout:hover{
+    background-color: #217dbb !important;
+}
+
+.logout:active{
+    position: relative;
+    top: 1px;
 }
 
 
