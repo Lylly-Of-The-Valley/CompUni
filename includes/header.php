@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Template</title>
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/ourStyles.css"/>
 </head>
 <body>
-
 <header>
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -22,6 +21,7 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
+				
                     <li>
                         <a href="#">Home</a>
                     </li>

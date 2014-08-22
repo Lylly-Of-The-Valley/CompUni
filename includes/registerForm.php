@@ -1,4 +1,4 @@
-<form method="post" class="form-horizontal">
+﻿<form method="post" class="form-horizontal" action="register.php?a=3">
     <fieldset>
         <legend>Register</legend>
         <div class="form-group">
@@ -46,7 +46,7 @@
         <div class="form-group">
             <label for="inputEmail" class="col-lg-2 control-label">Email<sup class="required">*</sup></label>
             <div class="col-lg-10">
-                <input type="email" name="emai" required="" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" name="email" required="" class="form-control" id="inputEmail" placeholder="Email">
             </div>
         </div>
         <div class="form-group">
@@ -77,3 +77,5 @@
         </div>
     </fieldset>
 </form>
+
+
