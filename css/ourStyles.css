@@ -60,7 +60,16 @@ section.content>div.container {
     top: 1px;
 }
 
+.meta-info{
+    padding-left: 0;
+}
 
+.category-description{
+    color: gray;
+    font-size: 10px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
 /* media queries */
 @media all and (max-width: 767px) {
     ul.navbar-nav>li{

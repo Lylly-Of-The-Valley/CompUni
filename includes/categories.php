@@ -7,15 +7,16 @@
         <ul>
             <li>
                 <a href="#">Hardware</a>
-                <ul>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">CPU</a></li>
-                </ul>
+                <div class="category-description">Processors, Memory, cooling systems, overclock, Video cards, MotherBoard, Laptops...</div>
             </li>
             <li>
                 <a href="#">Software</a>
+                <div class="category-description">Windows, Linux/Unix operating systems, Distributed Software, Programming, Graphics, Design...</div>
+            </li>
+            <li>
+                <a href="#">Networks and communications</a>
+                <div class="category-description">Networks, mobile devices Entertainment...</div>
             </li>
         </ul>
-
     </div>
 </div>

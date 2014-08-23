@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/ourStyles.css"/>
+    <link rel="stylesheet" href="css/startbootstrap.min.css"/>
 </head>
 <body>
 <header>
