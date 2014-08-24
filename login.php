@@ -1,25 +1,29 @@
 <?php
+
 require ("includes/connect.php");
-
+if (!tep_session_is_registered('signed_in')) {
 $userName=$_POST['userName'];
-
 $password=$_POST['password'];
-//echo $password.'<br>';
-
-$result = mysql_query("SELECT user_username,users_password FROM users where user_username ='".$userName."' and users_password='".$password."'");
+$result = mysql_query("SELECT distinct * FROM users where user_username ='".$userName."' and users_password='".$password."'");
+if (mysql_num_rows($result)){
 $account= mysql_fetch_array($result, MYSQL_ASSOC);
-if (($account['user_username'] !='') and ($account['users_password'] !='')){
-$_SESSION['user_name'] =$account['user_username'];
-$_SESSION['signed_in'] = true;
-}
-require("includes/header.php");
 
-if (($account['user_username'] !='') and ($account['users_password'] !='')){
-require("includes/categories.php");
-require("includes/posts.php");
+    if (!tep_session_is_registered('users_id')) {
+      $users_id =$account['users_id'];
+      tep_session_register('users_id');
+    }
+    if (!tep_session_is_registered('username_s')) {
+      $username_s =$account['user_username'];
+      tep_session_register('username_s');
+    }
+	    if (!tep_session_is_registered('signed_in')) {
+      $signed_in =true;
+      tep_session_register('signed_in');
+    }
 }
-else {
+require("includes/headerForm.php");
 require("includes/loginForm.php");
+
 }
 
-require("includes/footer.php");
+require("includes/footerForm.php");

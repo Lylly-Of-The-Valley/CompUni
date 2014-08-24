@@ -1,4 +1,5 @@
-﻿<?php if(!isset($_SESSION['user_name'])) {
+﻿<?php if(!tep_session_is_registered('signed_in')) {
+
 ?>
 <form method="post" class="form-horizontal" action="login.php">
     <fieldset>
@@ -26,19 +27,8 @@
 </form>
 <?php 
 } else {
-?>
-      <div class="form-group"><?php echo $_SESSION['user_name'];?>
-            
-        </div>
-        <div class="form-group">
- 
-        </div>
-        <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
-                <button type="reset" class="btn btn-default">LOGOUT</button>
-                
-            </div>
-        </div>
-<?php
+
+require("includes/categoriesForm.php");
+require("includes/postsForm.php");
 }
 ?>

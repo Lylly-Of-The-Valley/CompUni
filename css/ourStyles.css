@@ -77,6 +77,14 @@ section.content>div.container {
 .teammate .name{
     font-weight: bold;
 }
+
+ul ul {
+	display: none;
+}
+ul li:hover > ul {
+	display: block;
+}
+
 /* media queries */
 @media all and (max-width: 767px) {
     ul.navbar-nav>li{

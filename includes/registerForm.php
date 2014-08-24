@@ -1,4 +1,5 @@
-﻿<form method="post" class="form-horizontal" action="register.php?a=3">
+﻿<?php if (!tep_session_is_registered('register_s')) { ?>
+<form method="post" class="form-horizontal" action="register.php?sid=<?php echo tep_session_id();?>">
     <fieldset>
         <legend>Register</legend>
         <div class="form-group">
@@ -77,5 +78,13 @@
         </div>
     </fieldset>
 </form>
-
-
+<?php 
+} else { ?>
+<div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">Uspe6na registraciq</label>
+            <div class="col-lg-10">
+                         </div>
+        </div>
+<?php
+ }
+?>
