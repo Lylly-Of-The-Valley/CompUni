@@ -20,7 +20,7 @@ $confirmPassword=$_POST['confirmPassword'];
 $description=$_POST['description'];
 if ($password != $confirmPassword) $check=false;
 if($check){
-$result = mysql_query("INSERT INTO users (users_gender, users_firstname, users_lastname, user_username, user_town, user_description, users_email_address, users_password) VALUES ('".$gender. "','".$fName. "','".$lName. "','".$userName. "','".$town. "','".$description. "','".$email. "','".$password. "')");
+$result = mysql_query("INSERT INTO users (users_gender, users_firstname, users_lastname, user_username, user_town, user_description, users_email_address, user_image, users_password) VALUES ('".$gender. "','".$fName. "','".$lName. "','".$userName. "','".$town. "','".$description. "','".$email. "','".$_FILES["picture"]["name"]. "','".md5($password). "')");
 if (!$result) {
     die('Invalid query: ' . mysql_error());
 }

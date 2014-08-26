@@ -2,11 +2,27 @@
     <fieldset>
         <legend>Create Topic</legend>
         <div class="form-group">
-            <label for="topicName" class="col-lg-2 control-label">Category Name<sup class="required"/></label>
+            <label for="topicName" class="col-lg-2 control-label">Topic Name<sup class="required"/></label>
             <div class="col-lg-10">
                 <input type="text" required="" name="topicName" class="form-control" id="topicName" placeholder="Topic Name">
             </div>
         </div>
+		<?php
+$category = mysql_query("SELECT cat_name,cat_id FROM categories  ORDER  BY cat_name DESC");
+if (mysql_num_rows($category)){
+?>
+		<div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">Topic category</label>
+            <div class="col-lg-10">
+               <select name="catTopic">
+				<?php while($categories = mysql_fetch_array($category, MYSQL_ASSOC)){?>
+					<option value="<?php echo $categories['cat_id'];?>"><?php echo $categories['cat_name'];?></option>
+				<?php } ?>
+			   </select>
+            </div>
+        </div>
+<?php } ?>
+
         <div class="form-group">
             <label for="textArea" class="col-lg-2 control-label">Description</label>
             <div class="col-lg-10">

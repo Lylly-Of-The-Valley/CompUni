@@ -62,7 +62,13 @@
                 <input type="password" name="confirmPassword" required="" class="form-control" id="inputConfPass" placeholder="Confirm Password">
             </div>
         </div>
-        <div class="form-group">
+		 <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">User Picture</label>
+            <div class="col-lg-10">
+                Select a file:<input type="file" name="picture">
+            </div>
+        </div>
+		<div class="form-group">
             <label for="textArea" class="col-lg-2 control-label">Description</label>
             <div class="col-lg-10">
                 <textarea class="form-control" name="description" rows="3" id="textArea"></textarea>

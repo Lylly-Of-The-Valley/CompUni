@@ -4,7 +4,7 @@ require ("includes/connect.php");
 if (!tep_session_is_registered('signed_in')) {
 $userName=$_POST['userName'];
 $password=$_POST['password'];
-$result = mysql_query("SELECT distinct * FROM users where user_username ='".$userName."' and users_password='".$password."'");
+$result = mysql_query("SELECT distinct * FROM users where user_username ='".$userName."' and users_password='".md5($password)."'");
 if (mysql_num_rows($result)){
 $account= mysql_fetch_array($result, MYSQL_ASSOC);
 

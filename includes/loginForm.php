@@ -27,8 +27,9 @@
 </form>
 <?php 
 } else {
+$url = "http://okiana.softuni-friends.org/php_teamwork/trunk/index.php?sid=".tep_session_id();
+echo $url;
+header('Location: ' . $url);
 
-require("includes/categoriesForm.php");
-require("includes/postsForm.php");
 }
 ?>
