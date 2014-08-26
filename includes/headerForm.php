@@ -22,15 +22,25 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
-                    <li> <?php if (tep_session_is_registered('signed_in')){?>
-                        <a href="#">Create</a>
-                        <ul class="create">
-                            <li><a href="createCategory.php?sid=<?php echo tep_session_id();?>">Category</a></li>
-                            <li><a href="createTopic.php?sid=<?php echo tep_session_id();?>">Topic</a></li>
+                    <?php if (tep_session_is_registered('signed_in')){?>
+                        <li class="dropdown">
 
-                        </ul>
-						<?php } ?>
-                    </li>
+                            <a data-toggle="dropdown" id="themes" class="dropdown-toggle" href="#">Create
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="createCategory.php?sid=<?php echo tep_session_id();?>">Category</a>
+                                </li>
+                                <li>
+                                    <a href="createTopic.php?sid=<?php echo tep_session_id();?>">Topic</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    <?php } ?>
+
                     <li>
                         <a href="about.php?sid=<?php echo tep_session_id();?>">About us</a>
                     </li>
