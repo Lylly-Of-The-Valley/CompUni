@@ -78,7 +78,6 @@ section.content>div.container {
     font-weight: bold;
 }
 
-
 /* media queries */
 @media all and (max-width: 767px) {
     ul.navbar-nav>li{
