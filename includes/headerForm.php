@@ -13,7 +13,7 @@
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.php?sid=<?php echo tep_session_id();?>"><img src="images/CompUni.png" alt="CompUniLogo"> CompUni</a>
+                <a class="navbar-brand header-logo" href="index.php?sid=<?php echo tep_session_id();?>"><img src="images/CompUni.png" alt="CompUniLogo"> CompUni</a>
                 <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
