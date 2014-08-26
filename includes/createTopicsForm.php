@@ -12,9 +12,9 @@ $category = mysql_query("SELECT cat_name,cat_id FROM categories  ORDER  BY cat_n
 if (mysql_num_rows($category)){
 ?>
 		<div class="form-group">
-            <label for="textArea" class="col-lg-2 control-label">Topic category</label>
+            <label for="select" class="col-lg-2 control-label">Topic category</label>
             <div class="col-lg-10">
-               <select name="catTopic">
+               <select id="select" class="form-control" name="catTopic">
 				<?php while($categories = mysql_fetch_array($category, MYSQL_ASSOC)){?>
 					<option value="<?php echo $categories['cat_id'];?>"><?php echo $categories['cat_name'];?></option>
 				<?php } ?>
@@ -24,9 +24,9 @@ if (mysql_num_rows($category)){
 <?php } ?>
 
         <div class="form-group">
-            <label for="textArea" class="col-lg-2 control-label">Description</label>
+            <label for="description" class="col-lg-2 control-label">Description</label>
             <div class="col-lg-10">
-                <textarea class="form-control" name="topicDescription" rows="3" id="textArea"></textarea>
+                <textarea class="form-control" name="topicDescription" rows="3" id="description"></textarea>
                 <span class="help-block">Write your topic </span>
             </div>
         </div>
