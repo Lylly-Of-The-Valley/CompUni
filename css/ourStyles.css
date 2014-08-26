@@ -78,12 +78,6 @@ section.content>div.container {
     font-weight: bold;
 }
 
-ul ul {
-	display: none;
-}
-ul li:hover > ul {
-	display: block;
-}
 
 /* media queries */
 @media all and (max-width: 767px) {
